@@ -26,7 +26,8 @@ RUN npm install
 COPY --from=build-frontend /app/frontend/dist/frontend /app/public
 
 # Expose the port that the backend server will run on (adjust this as per your backend config)
-EXPOSE 4200
+EXPOSE 4200 
+# change when needed
 
 # Start the backend server
 CMD ["npm", "start"]
